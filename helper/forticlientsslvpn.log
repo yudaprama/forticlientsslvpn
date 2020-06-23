@@ -1,0 +1,301 @@
+function chkbrowser() {
+if (is_nav && (is_major>4) && (is_major<5)) {
+alert("Sorry, we are unable to bring you back to the previous page.\nSorry for the inconvenience.");
+this.parent.main.location="/remote/login";}
+else
+history.go(-1);}
+</script>
+</html>
+
+----
+
+06/23/2020 10:16:32 [26973] dns suffix: 
+
+06/23/2020 10:16:32 [26973] Got local address from ppp, interface will be  up
+06/23/2020 10:16:33 [26973] ppp interface is up
+06/23/2020 10:16:33 [26973] run_scutil 36.37.68.218 0 0...
+06/23/2020 10:16:33 [26973] write argument OK.
+Generating pppd.resolv.conf...Done
+06/23/2020 10:16:34 [27096] begin sysconfig linux
+06/23/2020 10:16:34 [27096] Gateway to FGT: 10.20.20.1
+06/23/2020 10:16:34 [27096] delete route 1.1.1.1
+06/23/2020 10:16:34 [27096] Add the route for 36.37.68.218(10.20.20.1)
+06/23/2020 10:16:34 [27096] Setup split tunnel
+06/23/2020 10:16:34 [27096] route -n add -net 10.0.0.0 netmask 255.0.0.0 gw 192.168.224.2 dev ppp0
+06/23/2020 10:16:34 [27096] route -n add -net 172.17.0.0 netmask 255.255.0.0 gw 192.168.224.2 dev ppp0
+06/23/2020 10:16:34 [27096] route -n add -net 10.0.0.0 netmask 255.0.0.0 gw 192.168.224.2 dev ppp0
+06/23/2020 10:16:34 [27096] Failed add route: addr 10.0.0.0 netmask 255.0.0.0 gw 192.168.224.2 dev ppp0
+06/23/2020 10:16:34 [27096] route -n add -net 172.17.0.0 netmask 255.255.0.0 gw 192.168.224.2 dev ppp0
+06/23/2020 10:16:34 [27096] Failed add route: addr 172.17.0.0 netmask 255.255.0.0 gw 192.168.224.2 dev ppp0
+06/23/2020 10:16:34 [27096] route -n add -net 10.0.0.0 netmask 255.0.0.0 gw 192.168.224.2 dev ppp0
+06/23/2020 10:16:34 [27096] Failed add route: addr 10.0.0.0 netmask 255.0.0.0 gw 192.168.224.2 dev ppp0
+06/23/2020 10:16:34 [27096] route -n add -net 172.17.0.0 netmask 255.255.0.0 gw 192.168.224.2 dev ppp0
+06/23/2020 10:16:34 [27096] Failed add route: addr 172.17.0.0 netmask 255.255.0.0 gw 192.168.224.2 dev ppp0
+06/23/2020 10:16:34 [27096] route -n add -net 10.0.0.0 netmask 255.0.0.0 gw 192.168.224.2 dev ppp0
+06/23/2020 10:16:34 [27096] Failed add route: addr 10.0.0.0 netmask 255.0.0.0 gw 192.168.224.2 dev ppp0
+06/23/2020 10:16:34 [27096] route -n add -net 172.17.0.0 netmask 255.255.0.0 gw 192.168.224.2 dev ppp0
+06/23/2020 10:16:34 [27096] Failed add route: addr 172.17.0.0 netmask 255.255.0.0 gw 192.168.224.2 dev ppp0
+06/23/2020 10:16:34 [27096] route -n add -net 10.0.0.0 netmask 255.0.0.0 gw 192.168.224.2 dev ppp0
+06/23/2020 10:16:34 [27096] Failed add route: addr 10.0.0.0 netmask 255.0.0.0 gw 192.168.224.2 dev ppp0
+06/23/2020 10:16:34 [27096] route -n add -net 172.17.0.0 netmask 255.255.0.0 gw 192.168.224.2 dev ppp0
+06/23/2020 10:16:34 [27096] Failed add route: addr 172.17.0.0 netmask 255.255.0.0 gw 192.168.224.2 dev ppp0
+06/23/2020 10:16:51 [26287] signal rcved, logout now
+06/23/2020 10:16:51 [26973] killing pppd ...
+06/23/2020 10:16:51 [26273] kill_child:26973
+06/23/2020 10:16:51 [26973] kill_child:26975
+06/23/2020 10:16:51 [26973] kill_child:27096
+06/23/2020 10:16:51 [26273] kill_child:26287
+06/23/2020 10:16:51 [29254] begin cleanup linux...
+06/23/2020 10:16:51 [29254] restore /etc/resolv.conf
+06/23/2020 10:16:51 [29254] clean up route...
+06/23/2020 10:16:51 [29254] truncate pppd.log
+06/23/2020 10:16:51 [29254] truncate forticlientsslvpn.log
+06/23/2020 10:16:51 [26273] FortiClient SSLVPN[4.0.2333] stopped
+06/23/2020 10:16:55 [29316] set the loglevel to 1
+06/23/2020 10:16:55 [29421] set the loglevel to 1
+06/23/2020 10:16:55 [29421] sslvpn connection version:4.0.2333
+06/23/2020 10:16:55 [29421] rcv cmd:0 at state[0]
+06/23/2020 10:16:55 [29421] starting ssl vpn tunnel[4.0.2333]
+06/23/2020 10:16:55 [29425] route backup START
+06/23/2020 10:16:55 [29425] route backup DONE
+06/23/2020 10:16:55 [29426] execl /opt/forticlient-sslvpn/64bit/helper/get_fortisslvpn_info /opt/forticlient-sslvpn/64bit/helper 36.37.68.218 10443   ...
+06/23/2020 10:16:55 [29426] trusted CA dir: /home/yuda/.fctsslvpn_trustca
+06/23/2020 10:16:55 [29426] set loglevel to 1
+06/23/2020 10:16:55 [29426] Peer's certificate is not valid. action is 1
+06/23/2020 10:16:55 [29426] peer's certificate: 
+Certificate:$    Data:$        Version: 3 (0x2)$        Serial Number: -1394062349979793671 (-0x1358b4523d4ab907)$    Signature Algorithm: sha1WithRSAEncryption$        Issuer: CN=FG800C3913800399, O=Fortinet Ltd.$        Validity$            Not Before: Jun 15 14:02:54 2013 GMT$            Not After : Jun 16 14:02:54 2023 GMT$        Subject: CN=FG800C3913800399, O=Fortinet Ltd.$        Subject Public Key Info:$            Public Key Algorithm: rsaEncryption$                Public-Key: (2048 bit)$                Modulus:$                    00:d3:26:8a:66:6f:98:a4:4f:bf:80:21:7f:ce:c8:$                    53:ea:60:23:0a:5b:2d:5a:c6:3f:7c:91:b6:b4:ac:$                    9a:23:f1:74:19:a5:19:41:22:ce:79:90:e6:33:60:$                    14:13:f6:59:c3:9a:bb:04:3e:50:af:c4:5f:5d:38:$                    c1:14:ce:c7:da:c8:5f:65:47:10:8d:8c:03:28:fc:$                    67:bb:91:28:ee:c6:74:80:19:bd:9d:a4:83:ec:19:$                    e6:71:12:69:e2:96:32:c8:e5:de:c6:0c:8b:ee:c1:$                    e2:00:0f:c0:3c:3f:67:91:2c:ad:4a:15:f1:9c:07:$                    1a:64:24:cd:cd:75:5c:8d:4f:9c:eb:04:b4:be:d1:$                    d5:95:a2:39:fa:1c:d8:c5:27:96:94:8d:4a:e8:da:$                    a3:fd:1f:02:27:ac:1f:47:0d:97:d8:f6:cb:bf:2c:$                    7a:8a:ff:8e:55:cd:e6:8b:c6:86:2a:1a:47:0b:c1:$                    ac:6b:5e:6a:ca:9f:e6:58:9b:1f:47:7f:0e:6a:8f:$                    49:a1:d8:a2:86:44:4d:24:7c:db:a1:bc:19:a3:d6:$                    50:d7:51:02:84:1e:c5:14:81:e7:1c:10:8b:fa:4f:$                    de:a2:62:39:1d:c5:cf:fe:7d:09:93:4a:bb:39:72:$                    90:9c:ce:0a:8a:44:6a:bf:d1:04:4a:0e:96:ae:3a:$                    4c:8d$                Exponent: 65537 (0x10001)$    Signature Algorithm: sha1WithRSAEncryption$         63:3c:b2:2c:38:64:cf:e6:9a:f7:2d:be:8e:05:6d:ec:4e:d4:$         5b:e6:ce:fb:ea:f8:fd:d3:55:ab:e8:72:06:6b:3c:ee:53:65:$         0b:d1:5b:46:82:c9:7c:1f:0a:70:50:2b:65:5e:bd:07:96:3b:$         79:8d:6c:c3:16:8c:22:9d:e9:c4:e9:10:6c:f6:53:d2:02:47:$         d7:eb:e3:ec:20:52:12:c2:ed:d9:3b:de:c1:d4:a1:9e:2b:57:$         50:4c:57:3b:1b:94:40:62:aa:f0:b4:09:35:4f:be:40:66:34:$         ee:dc:4d:1d:bc:6a:7b:73:eb:b4:ff:a2:f5:0c:8c:d5:e6:63:$         8c:dd:5c:38:77:2f:6a:c8:bf:93:0f:1d:9f:18:fd:45:7c:f7:$         c6:77:63:e9:30:73:37:8a:02:64:f6:54:00:7a:bb:52:06:7a:$         97:75:8a:30:db:65:12:aa:60:73:e1:f0:ce:60:be:2f:50:b4:$         37:c6:f7:b2:5a:fb:f1:d9:2d:b3:15:69:bb:c2:84:64:43:68:$         c6:a9:5b:ba:a7:e0:4b:21:c6:f3:aa:4c:7e:c6:aa:10:87:a9:$         d4:01:9f:a5:f9:e6:63:5a:d8:ba:7e:8b:77:bd:2e:1b:6c:74:$         b2:38:71:53:f4:66:73:80:74:d6:0e:74:f3:af:a6:bc:07:3a:$         68:69:21:0b$
+06/23/2020 10:16:56 [29426] realm is enabled: 
+06/23/2020 10:16:56 [29426] no Content-Length
+06/23/2020 10:16:56 [29426] try to get cookie for the first time: 98 :  SVPNNETWORKCOOKIE=; path=/remote/network; expires=Tue, 23-Jun-2020 03:16:56 GMT; secure; httponly
+06/23/2020 10:16:56 [29426] no Content-Length
+06/23/2020 10:16:56 [29426] cookie: SVPNCOOKIE=lpabuGsyakdpFPIJkNCbdchnV23tIP6a0gpjGGjRL4h8iDjNWdx7hoAMXAa26w07%0a7AlDhS5Il4GX5/S1bWLmZQoxAv4ICLNvPR3joorTMCwbDwjDppIPgUE4t4s1d5ZQ%0aMzAlb8yOLkqB2LSFsk55fg==%0a
+06/23/2020 10:16:56 [29426] no Content-Length
+06/23/2020 10:16:56 [29426] no Content-Length
+06/23/2020 10:16:56 [29426] 0|36.37.68.218|10443|1|10.0.0.0/255.0.0.0,172.17.0.0/255.255.0.0,10.0.0.0/255.0.0.0,172.17.0.0/255.255.0.0,10.0.0.0/255.0.0.0,172.17.0.0/255.255.0.0,10.0.0.0/255.0.0.0,172.17.0.0/255.255.0.0,10.0.0.0/255.0.0.0,172.17.0.0/255.255.0.0|lpabuGsyakdpFPIJkNCbdchnV23tIP6a0gpjGGjRL4h8iDjNWdx7hoAMXAa26w07%0a7AlDhS5Il4GX5/S1bWLmZQoxAv4ICLNvPR3joorTMCwbDwjDppIPgUE4t4s1d5ZQ%0aMzAlb8yOLkqB2LSFsk55fg==%0a|0
+06/23/2020 10:16:56 [29421] ssl vpn tunnel started
+06/23/2020 10:16:56 [29421] rcv cmd:0 at state[1]
+06/23/2020 10:16:56 [29450] server=36.37.68.218[36.37.68.218] port=10443[10443] version=1 tunnel=10.0.0.0/255.0.0.0,172.17.0.0/255.255.0.0,10.0.0.0/255.0.0.0,172.17.0.0/255.255.0.0,10.0.0.0/255.0.0.0,172.17.0.0/255.255.0.0,10.0.0.0/255.0.0.0,172.17.0.0/255.255.0.0,10.0.0.0/255.0.0.0,172.17.0.0/255.255.0.0 cookie=lpabuGsyakdpFPIJkNCbdchnV23tIP6a0gpjGGjRL4h8iDjNWdx7hoAMXAa26w07%0a7AlDhS5Il4GX5/S1bWLmZQoxAv4ICLNvPR3joorTMCwbDwjDppIPgUE4t4s1d5ZQ%0aMzAlb8yOLkqB2LSFsk55fg==%0a exclusive routing: 0
+
+06/23/2020 10:16:56 [29450] starting pppd
+06/23/2020 10:16:56 [29450] use tty:/dev/pts/3
+06/23/2020 10:16:56 [29450] connecting to 36.37.68.218:10443
+06/23/2020 10:16:56 [29450] [xml config]: GET /remote/fortisslvpn_xml ... (received 1542 bytes): 
+HTTP/1.1 404 Not Found
+Date: Tue, 23 Jun 2020 03:16:56 GMT
+Transfer-Encoding: chunked
+Content-Type: text/html
+X-Frame-Options: SAMEORIGIN
+
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+<link href="/style.css?q=32662" rel="stylesheet" type="text/css">
+</head>
+<body class="main">
+<table class="container" cellpadding="0" cellspacing="0">
+<tr>
+<td><table class="dialog" width=300 align="center" cellpadding="0" cellspacing="0">
+<tr>
+<td><table class="header" cellpadding="0" cellspacing="0">
+<tr>
+<td>Error</td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<td class="body" height=100><table class="body"><tr><td align="center">
+The web page cannot be found.<br>
+</td></tr></table></td>
+</tr>
+<tr><td>
+<table class="footer" cellpadding="0" cellspacing="0">
+<tr><td>
+<input class="button" type="button" value="OK" onclick="chkbrowser()">
+</td></tr>
+</table>
+</td></tr>
+</table>
+</body>
+<script language = "javascript">
+var agt=navigator.userAgent.toLowerCase();
+var is_major = parseInt(navigator.appVersion);
+var is_nav  = ((agt.indexOf('mozilla')!=-1) && (agt.indexOf('spoofer')==-1) && (agt.indexOf('compatible') == -1) && (agt.indexOf('opera')==-1) && (agt.indexOf('webtv')==-1) && (agt.indexOf('hotjava')==-1));
+function chkbrowser() {
+if (is_nav && (is_major>4) && (is_major<5)) {
+alert("Sorry, we are unable to bring you back to the previous page.\nSorry for the inconvenience.");
+this.parent.main.location="/remote/login";}
+else
+history.go(-1);}
+</script>
+</html>
+
+----
+
+06/23/2020 10:16:56 [29450] dns suffix: 
+
+06/23/2020 10:16:56 [29450] Got local address from ppp, interface will be  up
+06/23/2020 10:16:57 [29450] ppp interface is up
+06/23/2020 10:16:57 [29450] run_scutil 36.37.68.218 0 0...
+06/23/2020 10:16:57 [29450] write argument OK.
+Generating pppd.resolv.conf...Done
+06/23/2020 10:16:58 [29561] begin sysconfig linux
+06/23/2020 10:16:58 [29561] Gateway to FGT: 10.20.20.1
+06/23/2020 10:16:58 [29561] delete route 1.1.1.1
+06/23/2020 10:16:58 [29561] Add the route for 36.37.68.218(10.20.20.1)
+06/23/2020 10:16:58 [29561] Setup split tunnel
+06/23/2020 10:16:58 [29561] route -n add -net 10.0.0.0 netmask 255.0.0.0 gw 192.168.224.2 dev ppp0
+06/23/2020 10:16:58 [29561] route -n add -net 172.17.0.0 netmask 255.255.0.0 gw 192.168.224.2 dev ppp0
+06/23/2020 10:16:58 [29561] route -n add -net 10.0.0.0 netmask 255.0.0.0 gw 192.168.224.2 dev ppp0
+06/23/2020 10:16:58 [29561] Failed add route: addr 10.0.0.0 netmask 255.0.0.0 gw 192.168.224.2 dev ppp0
+06/23/2020 10:16:58 [29561] route -n add -net 172.17.0.0 netmask 255.255.0.0 gw 192.168.224.2 dev ppp0
+06/23/2020 10:16:58 [29561] Failed add route: addr 172.17.0.0 netmask 255.255.0.0 gw 192.168.224.2 dev ppp0
+06/23/2020 10:16:58 [29561] route -n add -net 10.0.0.0 netmask 255.0.0.0 gw 192.168.224.2 dev ppp0
+06/23/2020 10:16:58 [29561] Failed add route: addr 10.0.0.0 netmask 255.0.0.0 gw 192.168.224.2 dev ppp0
+06/23/2020 10:16:58 [29561] route -n add -net 172.17.0.0 netmask 255.255.0.0 gw 192.168.224.2 dev ppp0
+06/23/2020 10:16:58 [29561] Failed add route: addr 172.17.0.0 netmask 255.255.0.0 gw 192.168.224.2 dev ppp0
+06/23/2020 10:16:58 [29561] route -n add -net 10.0.0.0 netmask 255.0.0.0 gw 192.168.224.2 dev ppp0
+06/23/2020 10:16:58 [29561] Failed add route: addr 10.0.0.0 netmask 255.0.0.0 gw 192.168.224.2 dev ppp0
+06/23/2020 10:16:58 [29561] route -n add -net 172.17.0.0 netmask 255.255.0.0 gw 192.168.224.2 dev ppp0
+06/23/2020 10:16:58 [29561] Failed add route: addr 172.17.0.0 netmask 255.255.0.0 gw 192.168.224.2 dev ppp0
+06/23/2020 10:16:58 [29561] route -n add -net 10.0.0.0 netmask 255.0.0.0 gw 192.168.224.2 dev ppp0
+06/23/2020 10:16:58 [29561] Failed add route: addr 10.0.0.0 netmask 255.0.0.0 gw 192.168.224.2 dev ppp0
+06/23/2020 10:16:58 [29561] route -n add -net 172.17.0.0 netmask 255.255.0.0 gw 192.168.224.2 dev ppp0
+06/23/2020 10:16:58 [29561] Failed add route: addr 172.17.0.0 netmask 255.255.0.0 gw 192.168.224.2 dev ppp0
+06/23/2020 11:32:17 [29426] signal rcved, logout now
+06/23/2020 11:32:17 [29426] ssl_write error return -1
+06/23/2020 11:32:17 [29421] kill_child:29450
+06/23/2020 11:32:17 [29421] kill_child:29426
+06/23/2020 11:32:17 [29450] killing pppd ...
+06/23/2020 11:32:17 [29450] kill_child:29452
+06/23/2020 11:32:17 [29450] kill_child:29561
+06/23/2020 11:32:17 [7495] begin cleanup linux...
+06/23/2020 11:32:17 [7495] restore /etc/resolv.conf
+06/23/2020 11:32:17 [7495] clean up route...
+06/23/2020 11:32:17 [7495] truncate pppd.log
+06/23/2020 11:32:17 [7495] truncate forticlientsslvpn.log
+06/23/2020 11:32:17 [29421] FortiClient SSLVPN[4.0.2333] stopped
+06/23/2020 11:46:54 [3410] set the loglevel to 1
+06/23/2020 11:46:54 [3410] sslvpn connection version:4.0.2333
+06/23/2020 11:46:54 [3290] set the loglevel to 1
+06/23/2020 11:46:54 [3410] rcv cmd:0 at state[0]
+06/23/2020 11:46:54 [3410] starting ssl vpn tunnel[4.0.2333]
+06/23/2020 11:46:54 [3414] route backup START
+06/23/2020 11:46:54 [3414] route backup DONE
+06/23/2020 11:46:54 [3415] execl /opt/forticlient-sslvpn/64bit/helper/get_fortisslvpn_info /opt/forticlient-sslvpn/64bit/helper 36.37.68.218 10443   ...
+06/23/2020 11:46:54 [3415] trusted CA dir: /home/yuda/.fctsslvpn_trustca
+06/23/2020 11:46:54 [3415] set loglevel to 1
+06/23/2020 11:46:54 [3415] Peer's certificate is not valid. action is 1
+06/23/2020 11:46:54 [3415] peer's certificate: 
+Certificate:$    Data:$        Version: 3 (0x2)$        Serial Number: -1394062349979793671 (-0x1358b4523d4ab907)$    Signature Algorithm: sha1WithRSAEncryption$        Issuer: CN=FG800C3913800399, O=Fortinet Ltd.$        Validity$            Not Before: Jun 15 14:02:54 2013 GMT$            Not After : Jun 16 14:02:54 2023 GMT$        Subject: CN=FG800C3913800399, O=Fortinet Ltd.$        Subject Public Key Info:$            Public Key Algorithm: rsaEncryption$                Public-Key: (2048 bit)$                Modulus:$                    00:d3:26:8a:66:6f:98:a4:4f:bf:80:21:7f:ce:c8:$                    53:ea:60:23:0a:5b:2d:5a:c6:3f:7c:91:b6:b4:ac:$                    9a:23:f1:74:19:a5:19:41:22:ce:79:90:e6:33:60:$                    14:13:f6:59:c3:9a:bb:04:3e:50:af:c4:5f:5d:38:$                    c1:14:ce:c7:da:c8:5f:65:47:10:8d:8c:03:28:fc:$                    67:bb:91:28:ee:c6:74:80:19:bd:9d:a4:83:ec:19:$                    e6:71:12:69:e2:96:32:c8:e5:de:c6:0c:8b:ee:c1:$                    e2:00:0f:c0:3c:3f:67:91:2c:ad:4a:15:f1:9c:07:$                    1a:64:24:cd:cd:75:5c:8d:4f:9c:eb:04:b4:be:d1:$                    d5:95:a2:39:fa:1c:d8:c5:27:96:94:8d:4a:e8:da:$                    a3:fd:1f:02:27:ac:1f:47:0d:97:d8:f6:cb:bf:2c:$                    7a:8a:ff:8e:55:cd:e6:8b:c6:86:2a:1a:47:0b:c1:$                    ac:6b:5e:6a:ca:9f:e6:58:9b:1f:47:7f:0e:6a:8f:$                    49:a1:d8:a2:86:44:4d:24:7c:db:a1:bc:19:a3:d6:$                    50:d7:51:02:84:1e:c5:14:81:e7:1c:10:8b:fa:4f:$                    de:a2:62:39:1d:c5:cf:fe:7d:09:93:4a:bb:39:72:$                    90:9c:ce:0a:8a:44:6a:bf:d1:04:4a:0e:96:ae:3a:$                    4c:8d$                Exponent: 65537 (0x10001)$    Signature Algorithm: sha1WithRSAEncryption$         63:3c:b2:2c:38:64:cf:e6:9a:f7:2d:be:8e:05:6d:ec:4e:d4:$         5b:e6:ce:fb:ea:f8:fd:d3:55:ab:e8:72:06:6b:3c:ee:53:65:$         0b:d1:5b:46:82:c9:7c:1f:0a:70:50:2b:65:5e:bd:07:96:3b:$         79:8d:6c:c3:16:8c:22:9d:e9:c4:e9:10:6c:f6:53:d2:02:47:$         d7:eb:e3:ec:20:52:12:c2:ed:d9:3b:de:c1:d4:a1:9e:2b:57:$         50:4c:57:3b:1b:94:40:62:aa:f0:b4:09:35:4f:be:40:66:34:$         ee:dc:4d:1d:bc:6a:7b:73:eb:b4:ff:a2:f5:0c:8c:d5:e6:63:$         8c:dd:5c:38:77:2f:6a:c8:bf:93:0f:1d:9f:18:fd:45:7c:f7:$         c6:77:63:e9:30:73:37:8a:02:64:f6:54:00:7a:bb:52:06:7a:$         97:75:8a:30:db:65:12:aa:60:73:e1:f0:ce:60:be:2f:50:b4:$         37:c6:f7:b2:5a:fb:f1:d9:2d:b3:15:69:bb:c2:84:64:43:68:$         c6:a9:5b:ba:a7:e0:4b:21:c6:f3:aa:4c:7e:c6:aa:10:87:a9:$         d4:01:9f:a5:f9:e6:63:5a:d8:ba:7e:8b:77:bd:2e:1b:6c:74:$         b2:38:71:53:f4:66:73:80:74:d6:0e:74:f3:af:a6:bc:07:3a:$         68:69:21:0b$
+06/23/2020 11:46:55 [3415] realm is enabled: 
+06/23/2020 11:46:55 [3415] no Content-Length
+06/23/2020 11:46:55 [3415] try to get cookie for the first time: 98 :  SVPNNETWORKCOOKIE=; path=/remote/network; expires=Tue, 23-Jun-2020 04:46:55 GMT; secure; httponly
+06/23/2020 11:46:55 [3415] no Content-Length
+06/23/2020 11:46:55 [3415] cookie: SVPNCOOKIE=lpabuGsyakdpFPIJkNCbdchnV23tIP6a0gpjGGjRL4h8iDjNWdx7hoAMXAa26w07%0a7AlDhS5Il4GX5/S1bWLmZQsa4PAJYZ3QtmAC24MLuAOF8Ps1X81PO4JOR3AtD/fg%0a5tdWdITTWfmsrrpKWNiq/A==%0a
+06/23/2020 11:46:55 [3415] no Content-Length
+06/23/2020 11:46:55 [3415] no Content-Length
+06/23/2020 11:46:55 [3415] 0|36.37.68.218|10443|1|10.0.0.0/255.0.0.0,172.17.0.0/255.255.0.0,10.0.0.0/255.0.0.0,172.17.0.0/255.255.0.0,10.0.0.0/255.0.0.0,172.17.0.0/255.255.0.0,10.0.0.0/255.0.0.0,172.17.0.0/255.255.0.0,10.0.0.0/255.0.0.0,172.17.0.0/255.255.0.0|lpabuGsyakdpFPIJkNCbdchnV23tIP6a0gpjGGjRL4h8iDjNWdx7hoAMXAa26w07%0a7AlDhS5Il4GX5/S1bWLmZQsa4PAJYZ3QtmAC24MLuAOF8Ps1X81PO4JOR3AtD/fg%0a5tdWdITTWfmsrrpKWNiq/A==%0a|0
+06/23/2020 11:46:55 [3410] ssl vpn tunnel started
+06/23/2020 11:46:55 [3410] rcv cmd:0 at state[1]
+06/23/2020 11:46:55 [3446] server=36.37.68.218[36.37.68.218] port=10443[10443] version=1 tunnel=10.0.0.0/255.0.0.0,172.17.0.0/255.255.0.0,10.0.0.0/255.0.0.0,172.17.0.0/255.255.0.0,10.0.0.0/255.0.0.0,172.17.0.0/255.255.0.0,10.0.0.0/255.0.0.0,172.17.0.0/255.255.0.0,10.0.0.0/255.0.0.0,172.17.0.0/255.255.0.0 cookie=lpabuGsyakdpFPIJkNCbdchnV23tIP6a0gpjGGjRL4h8iDjNWdx7hoAMXAa26w07%0a7AlDhS5Il4GX5/S1bWLmZQsa4PAJYZ3QtmAC24MLuAOF8Ps1X81PO4JOR3AtD/fg%0a5tdWdITTWfmsrrpKWNiq/A==%0a exclusive routing: 0
+
+06/23/2020 11:46:55 [3446] starting pppd
+06/23/2020 11:46:55 [3446] use tty:/dev/pts/3
+06/23/2020 11:46:55 [3446] connecting to 36.37.68.218:10443
+06/23/2020 11:46:56 [3446] [xml config]: GET /remote/fortisslvpn_xml ... (received 1542 bytes): 
+HTTP/1.1 404 Not Found
+Date: Tue, 23 Jun 2020 04:46:56 GMT
+Transfer-Encoding: chunked
+Content-Type: text/html
+X-Frame-Options: SAMEORIGIN
+
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+<link href="/style.css?q=32662" rel="stylesheet" type="text/css">
+</head>
+<body class="main">
+<table class="container" cellpadding="0" cellspacing="0">
+<tr>
+<td><table class="dialog" width=300 align="center" cellpadding="0" cellspacing="0">
+<tr>
+<td><table class="header" cellpadding="0" cellspacing="0">
+<tr>
+<td>Error</td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<td class="body" height=100><table class="body"><tr><td align="center">
+The web page cannot be found.<br>
+</td></tr></table></td>
+</tr>
+<tr><td>
+<table class="footer" cellpadding="0" cellspacing="0">
+<tr><td>
+<input class="button" type="button" value="OK" onclick="chkbrowser()">
+</td></tr>
+</table>
+</td></tr>
+</table>
+</body>
+<script language = "javascript">
+var agt=navigator.userAgent.toLowerCase();
+var is_major = parseInt(navigator.appVersion);
+var is_nav  = ((agt.indexOf('mozilla')!=-1) && (agt.indexOf('spoofer')==-1) && (agt.indexOf('compatible') == -1) && (agt.indexOf('opera')==-1) && (agt.indexOf('webtv')==-1) && (agt.indexOf('hotjava')==-1));
+function chkbrowser() {
+if (is_nav && (is_major>4) && (is_major<5)) {
+alert("Sorry, we are unable to bring you back to the previous page.\nSorry for the inconvenience.");
+this.parent.main.location="/remote/login";}
+else
+history.go(-1);}
+</script>
+</html>
+
+----
+
+06/23/2020 11:46:56 [3446] dns suffix: 
+
+06/23/2020 11:46:56 [3446] Got local address from ppp, interface will be  up
+06/23/2020 11:46:57 [3446] ppp interface is up
+06/23/2020 11:46:57 [3446] run_scutil 36.37.68.218 0 0...
+06/23/2020 11:46:57 [3446] write argument OK.
+Generating pppd.resolv.conf...Done
+06/23/2020 11:46:58 [3486] begin sysconfig linux
+06/23/2020 11:46:58 [3486] Gateway to FGT: 10.20.20.1
+06/23/2020 11:46:58 [3486] delete route 1.1.1.1
+06/23/2020 11:46:58 [3486] Add the route for 36.37.68.218(10.20.20.1)
+06/23/2020 11:46:58 [3486] Setup split tunnel
+06/23/2020 11:46:58 [3486] route -n add -net 10.0.0.0 netmask 255.0.0.0 gw 192.168.224.2 dev ppp0
+06/23/2020 11:46:58 [3486] route -n add -net 172.17.0.0 netmask 255.255.0.0 gw 192.168.224.2 dev ppp0
+06/23/2020 11:46:58 [3486] route -n add -net 10.0.0.0 netmask 255.0.0.0 gw 192.168.224.2 dev ppp0
+06/23/2020 11:46:58 [3486] Failed add route: addr 10.0.0.0 netmask 255.0.0.0 gw 192.168.224.2 dev ppp0
+06/23/2020 11:46:58 [3486] route -n add -net 172.17.0.0 netmask 255.255.0.0 gw 192.168.224.2 dev ppp0
+06/23/2020 11:46:58 [3486] Failed add route: addr 172.17.0.0 netmask 255.255.0.0 gw 192.168.224.2 dev ppp0
+06/23/2020 11:46:58 [3486] route -n add -net 10.0.0.0 netmask 255.0.0.0 gw 192.168.224.2 dev ppp0
+06/23/2020 11:46:58 [3486] Failed add route: addr 10.0.0.0 netmask 255.0.0.0 gw 192.168.224.2 dev ppp0
+06/23/2020 11:46:58 [3486] route -n add -net 172.17.0.0 netmask 255.255.0.0 gw 192.168.224.2 dev ppp0
+06/23/2020 11:46:58 [3486] Failed add route: addr 172.17.0.0 netmask 255.255.0.0 gw 192.168.224.2 dev ppp0
+06/23/2020 11:46:58 [3486] route -n add -net 10.0.0.0 netmask 255.0.0.0 gw 192.168.224.2 dev ppp0
+06/23/2020 11:46:58 [3486] Failed add route: addr 10.0.0.0 netmask 255.0.0.0 gw 192.168.224.2 dev ppp0
+06/23/2020 11:46:58 [3486] route -n add -net 172.17.0.0 netmask 255.255.0.0 gw 192.168.224.2 dev ppp0
+06/23/2020 11:46:58 [3486] Failed add route: addr 172.17.0.0 netmask 255.255.0.0 gw 192.168.224.2 dev ppp0
+06/23/2020 11:46:58 [3486] route -n add -net 10.0.0.0 netmask 255.0.0.0 gw 192.168.224.2 dev ppp0
+06/23/2020 11:46:58 [3486] Failed add route: addr 10.0.0.0 netmask 255.0.0.0 gw 192.168.224.2 dev ppp0
+06/23/2020 11:46:58 [3486] route -n add -net 172.17.0.0 netmask 255.255.0.0 gw 192.168.224.2 dev ppp0
+06/23/2020 11:46:58 [3486] Failed add route: addr 172.17.0.0 netmask 255.255.0.0 gw 192.168.224.2 dev ppp0
+06/23/2020 11:54:33 [3446] killing pppd ...
+06/23/2020 11:54:33 [3446] kill_child:3449
+06/23/2020 11:54:33 [3446] kill_child:3486
+06/23/2020 11:54:33 [3410] kill_child:3446
+06/23/2020 11:54:33 [3410] kill_child:3415
+06/23/2020 11:54:33 [3415] signal rcved, logout now
+06/23/2020 11:54:33 [3415] ssl_write error return -1
+06/23/2020 11:54:34 [19444] begin cleanup linux...
+06/23/2020 11:54:34 [19444] restore /etc/resolv.conf
+06/23/2020 11:54:34 [19444] clean up route...
+06/23/2020 11:54:34 [19444] truncate pppd.log
+06/23/2020 11:54:34 [19444] truncate forticlientsslvpn.log
+06/23/2020 11:54:34 [3410] FortiClient SSLVPN[4.0.2333] stopped
